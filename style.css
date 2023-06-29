@@ -1,0 +1,160 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto";
+}
+
+.row-btns {
+  display: flex;
+  flex-direction: row;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+.jcc {
+  justify-content: center;
+}
+
+.jcsb {
+  justify-content: space-between;
+}
+
+.jcsa {
+  justify-content: space-around;
+}
+
+.jcfs {
+  justify-content: flex-start;
+}
+
+.jcfe {
+  justify-content: flex-end;
+}
+
+.aic {
+  align-items: center;
+}
+
+.aifs {
+  align-items: flex-start;
+}
+
+.aife {
+  align-items: flex-end;
+}
+
+.hidden {
+  display: none;
+}
+
+ul,
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.calculator {
+  height: 100vh;
+  background-color: #043d32;
+}
+
+.container {
+  width: 480px;
+  border-radius: 7px;
+  overflow: hidden;
+  background-color: #ffffff;
+  box-shadow: 0 0 35px 2px rgb(0, 43, 33);
+  padding: 20px;
+}
+
+.display {
+  width: 100%;
+  height: 70px;
+  border: none;
+  outline: none;
+  background-color: #dddddd;
+  border-radius: 5px;
+  box-shadow: inset 6px 6px 6px #a9aaab, inset -6px -6px 6px #e7e5e5;
+  margin-bottom: 10px;
+  text-align: right;
+  padding-right: 20px;
+  font-size: 27px;
+}
+
+.row-btns {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.row-btns:last-child {
+  margin-bottom: 0;
+}
+
+.btn {
+  background-color: #e3e1e1;
+  width: 80px;
+  height: 44px;
+  border-radius: 5px;
+  font-size: 20px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  box-shadow: 5px 5px 10px #c2c2c3, -5px -5px 10px #fff;
+}
+
+.btn:hover {
+    background-color: #fff;
+    box-shadow: inset 5px 5px 10px #d1d1d5, inset -5px -5px 10px #fff;
+}
+
+#eval {
+    background: #ff3d16;
+    color: #fff;
+    box-shadow: inset 5px 5px 10px #df4a2c, inset -5px -5px 8px #de3f20;
+}
+
+#eval:hover {
+    box-shadow: inset 5px 5px 10px #791a07, inset -5px -5px 8px #f16347;
+}
+
+#c {
+    background: #9fff39;
+    color: #fff;
+    box-shadow: inset 5px 5px 10px #81cd30, inset -5px -5px 8px #85d32d;
+}
+
+#c:hover {
+    box-shadow: inset 5px 5px 10px #508418, inset -5px -5px 8px #96f432;
+}
+
+#ac {
+    background: #ffa946;
+    color: #fff;
+    box-shadow: inset 5px 5px 10px #e39134, inset -5px -5px 8px #ce7b1d;
+}
+
+#ac:hover {
+    box-shadow: inset 5px 5px 10px #93550e, inset -5px -5px 8px #fa9b2e;
+}
+
+@media screen and (max-width: 550px) {
+  .container {
+    width: 358px;
+  }
+
+  .btn {
+    width: 55px;
+    height: 33px;
+    font-size: 17px;
+  }
+}
